@@ -22,10 +22,13 @@ namespace AquaWebStore.Models
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Hsuit> HSuits { get; set; }
+        public virtual DbSet<Hsuit> Hsuits { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Feedback> Feedbacks { get; set; }
-        public virtual DbSet<Collection> Collections { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Photo> Photos { get; set; }
+        public virtual DbSet<SubOrder> SubOrders { get; set; }
+        public virtual DbSet<PromoCode> PromoCodes { get; set; }
     }
 
 }

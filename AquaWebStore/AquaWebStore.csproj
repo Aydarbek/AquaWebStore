@@ -105,7 +105,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Pictures\HomePage.jpg" />
-    <Content Include="Pictures\Kasatka.jpg" />
+    <Content Include="Pictures\Sport_Suites\SpSuit_M1_back.jpg" />
+    <Content Include="Pictures\Sport_Suites\SpSuit_M1_front.jpg" />
+    <Content Include="Pictures\Sport_Suites\SpSuit_M2_back.jpg" />
+    <Content Include="Pictures\Sport_Suites\SpSuit_M2_front.jpg" />
+    <Content Include="Pictures\Sport_Suites\SpSuit_M3_back.jpg" />
+    <Content Include="Pictures\Sport_Suites\SpSuit_M3_front.jpg" />
+    <Content Include="Pictures\SwimSuites\SwSuit_S1_back.jpg" />
+    <Content Include="Pictures\SwimSuites\SwSuit_S1_front.jpg" />
+    <Content Include="Pictures\SwimSuites\SwSuit_S2_back.jpg" />
+    <Content Include="Pictures\SwimSuites\SwSuit_S2_front.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -120,11 +129,11 @@
     <Content Include="Views\Feedback\Add.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
     <Content Include="Views\Hsuit\Look.cshtml" />
-    <Content Include="Views\Collection\Index.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CollectionController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -132,12 +141,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Collection.cs" />
+    <Compile Include="Migrations\201902102207181_InitialCreate.cs" />
+    <Compile Include="Migrations\201902102207181_InitialCreate.Designer.cs">
+      <DependentUpon>201902102207181_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Context.cs" />
     <Compile Include="Models\DBInitializer.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\Hsuit.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\Photo.cs" />
+    <Compile Include="Models\Promocode.cs" />
+    <Compile Include="Models\Suborder.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -160,6 +177,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902102207181_InitialCreate.resx">
+      <DependentUpon>201902102207181_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

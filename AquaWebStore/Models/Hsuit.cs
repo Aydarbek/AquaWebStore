@@ -10,22 +10,10 @@ namespace AquaWebStore.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Photo { get; set; }
-        public string Sex { get; set; }
-        public int Size { get; set; }
+        public string Size { get; set; }
         public int Price { get; set; }
-        public virtual Collection Collection { get; set; }
 
-
-        public Hsuit()
-        {
-            Id = 1;
-            Name = "Касатка";
-            Description = "Гидрокостюм женский закрытый";
-            Photo = "Kasatka.jpg";
-            Sex = "F";
-            Size = 50;
-            Price = 7000;
-        }
+        public virtual ICollection<Photo> Photo { get; set; } = new List<Photo>();
+        public virtual Category Category { get; set; }
     }
 }

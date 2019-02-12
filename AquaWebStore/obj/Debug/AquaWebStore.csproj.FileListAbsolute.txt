@@ -35,3 +35,5 @@ D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\bin\EntityFramewor
 D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\bin\EntityFramework.SqlServer.dll
 D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\bin\EntityFramework.xml
 D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\bin\EntityFramework.SqlServer.xml
+D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebStore.Migrations.InitialCreate.resources
+D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebStore.csproj.GenerateResource.Cache
