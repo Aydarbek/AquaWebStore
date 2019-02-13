@@ -6,6 +6,8 @@ namespace AquaWebStore.Models
 
     public class Context : DbContext
     {
+        private static Context context;
+
         // Your context has been configured to use a 'Context' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
         // 'AquaWebStore.Models.Context' database on your LocalDb instance. 
@@ -17,6 +19,7 @@ namespace AquaWebStore.Models
         {
             Database.SetInitializer(new DBInitializer());
         }
+
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.

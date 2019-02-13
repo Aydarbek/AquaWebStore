@@ -9,7 +9,7 @@ namespace AquaWebStore.Controllers
 {
     public class HomeController : Controller
     {
-        Context db = new Context();
+        Context db;
         // GET: Home
         public ActionResult Index()
         {

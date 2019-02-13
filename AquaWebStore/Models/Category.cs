@@ -12,6 +12,6 @@ namespace AquaWebStore.Models
         public int CategoryId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<Hsuit> Hsuits { get; set; } = new List<Hsuit>();
+        public virtual ICollection<Hsuit> hsuits { get; set; } = new List<Hsuit>();
     }
 }

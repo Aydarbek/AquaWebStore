@@ -12,8 +12,7 @@ namespace AquaWebStore.Models
         public string Description { get; set; }
         public string Size { get; set; }
         public int Price { get; set; }
-
-        public virtual ICollection<Photo> Photo { get; set; } = new List<Photo>();
         public virtual Category Category { get; set; }
+        public virtual ICollection<Photo> photo { get; set; } = new List<Photo>();
     }
 }

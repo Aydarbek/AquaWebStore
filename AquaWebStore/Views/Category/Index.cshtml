@@ -1,8 +1,21 @@
-﻿@model AquaWebStore.Models.Category
+﻿@model AquaWebStore.Models.Hsuit
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>All Models</h2>
+<body>
+    <table>
+        @foreach (var s in ViewBag.hsuits)
+        {
+            <tr>
+                <td>@s.Name </td>
+            </tr>
+            
+
+        }
+    </table>
+
+</body>
 

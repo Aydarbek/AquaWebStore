@@ -145,6 +145,14 @@
     <Compile Include="Migrations\201902102207181_InitialCreate.Designer.cs">
       <DependentUpon>201902102207181_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902131559563_AquaDB_v2.cs" />
+    <Compile Include="Migrations\201902131559563_AquaDB_v2.Designer.cs">
+      <DependentUpon>201902131559563_AquaDB_v2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902132147432_Aqua_DB_v2.2.cs" />
+    <Compile Include="Migrations\201902132147432_Aqua_DB_v2.2.Designer.cs">
+      <DependentUpon>201902132147432_Aqua_DB_v2.2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Context.cs" />
@@ -181,6 +189,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902102207181_InitialCreate.resx">
       <DependentUpon>201902102207181_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902131559563_AquaDB_v2.resx">
+      <DependentUpon>201902131559563_AquaDB_v2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902132147432_Aqua_DB_v2.2.resx">
+      <DependentUpon>201902132147432_Aqua_DB_v2.2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,7 +7,7 @@ using System.Web;
 namespace AquaWebStore.Models
 {
     public class SubOrder
-    {
+    { 
         [Key]
         public int SuborderId { get; set; }
         public int Qty { get; set; }
