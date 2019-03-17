@@ -44,11 +44,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -105,12 +105,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Pictures\HomePage.jpg" />
-    <Content Include="Pictures\Sport_Suites\SpSuit_M1_back.jpg" />
-    <Content Include="Pictures\Sport_Suites\SpSuit_M1_front.jpg" />
-    <Content Include="Pictures\Sport_Suites\SpSuit_M2_back.jpg" />
-    <Content Include="Pictures\Sport_Suites\SpSuit_M2_front.jpg" />
-    <Content Include="Pictures\Sport_Suites\SpSuit_M3_back.jpg" />
-    <Content Include="Pictures\Sport_Suites\SpSuit_M3_front.jpg" />
+    <Content Include="Pictures\SportSuites\SpSuit_M1_back.jpg" />
+    <Content Include="Pictures\SportSuites\SpSuit_M1_front.jpg" />
+    <Content Include="Pictures\SportSuites\SpSuit_M2_back.jpg" />
+    <Content Include="Pictures\SportSuites\SpSuit_M2_front.jpg" />
+    <Content Include="Pictures\SportSuites\SpSuit_M3_back.jpg" />
+    <Content Include="Pictures\SportSuites\SpSuit_M3_front.jpg" />
     <Content Include="Pictures\SwimSuites\SwSuit_S1_back.jpg" />
     <Content Include="Pictures\SwimSuites\SwSuit_S1_front.jpg" />
     <Content Include="Pictures\SwimSuites\SwSuit_S2_back.jpg" />
@@ -121,7 +121,9 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Hsuit\Index.cshtml" />
     <Content Include="Views\Hsuit\Buy.cshtml" />
     <Content Include="Views\Hsuit\Add.cshtml" />
@@ -153,6 +155,10 @@
     <Compile Include="Migrations\201902132147432_Aqua_DB_v2.2.Designer.cs">
       <DependentUpon>201902132147432_Aqua_DB_v2.2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902151122043_Aqua_DB_v3.cs" />
+    <Compile Include="Migrations\201902151122043_Aqua_DB_v3.Designer.cs">
+      <DependentUpon>201902151122043_Aqua_DB_v3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Context.cs" />
@@ -176,6 +182,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Category\Look.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -195,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902132147432_Aqua_DB_v2.2.resx">
       <DependentUpon>201902132147432_Aqua_DB_v2.2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902151122043_Aqua_DB_v3.resx">
+      <DependentUpon>201902151122043_Aqua_DB_v3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -4,18 +4,27 @@
     ViewBag.Title = "Index";
 }
 
-<h2>All Models</h2>
-<body>
-    <table>
-        @foreach (var s in ViewBag.hsuits)
+<h2>
+    All Models
+        @foreach (var c in ViewBag.Categories)
         {
-            <tr>
-                <td>@s.Name </td>
-            </tr>
-            
-
+            <a href="~/category/look/@c.CategoryId">@c.Name</a>
         }
-    </table>
 
-</body>
+
+</h2>
+    <table>
+        <tr>
+    @foreach (var s in ViewBag.suits)
+    {
+        <td align="center">
+            <p>@s.Name</p>
+            <a href="~/hsuit/look/@s.Id"><p><img width="70%" src="~/Pictures/@s.DefaultImage" /></p></a>
+                <p>@s.Description</p>
+                <p>@s.Price.ToString("# RUB")</p>
+           
+        </td>
+    }
+        </tr>        
+    </table>
 

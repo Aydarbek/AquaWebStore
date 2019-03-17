@@ -10,16 +10,25 @@ namespace AquaWebStore.Controllers
     public class HsuitController : Controller
     {
 
-        // GET: Hsuit
+        Context db = new Context();
+
+
+
+            // GET: Hsuit
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Look()
+        [HttpGet]
+        public ActionResult Look(int Id)
         {
-            Hsuit suit = new Hsuit();
-            return View(suit);
+                Hsuit hsuit = db.Hsuits.First(h => h.Id == Id);
+                IEnumerable<Photo> photos = db.Photos.Where(p => p.hsuit.Id == Id);
+
+                ViewBag.hsuit = hsuit;
+                ViewBag.photos = photos;
+                return View();
         }
 
         public ActionResult Buy()
@@ -31,7 +40,6 @@ namespace AquaWebStore.Controllers
         {
             return View();
         }
-
 
 
 

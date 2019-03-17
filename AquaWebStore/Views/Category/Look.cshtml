@@ -1,0 +1,20 @@
+﻿@model AquaWebStore.Models.Hsuit
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.cat.Name</h2>
+<table>
+    <tr>
+        @foreach (var s in ViewBag.suits)
+        {
+            <td align="center">
+                <p>@s.Name</p>
+                <p><img width="70%" src="~/Pictures/@s.DefaultImage" /></p>
+                <a href="~/hsuit/look/@s.Id"><p>@s.Price</p></a>
+            </td>
+        }
+    </tr>
+</table>
+

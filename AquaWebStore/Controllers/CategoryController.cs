@@ -12,20 +12,29 @@ namespace AquaWebStore.Controllers
         Context db = new Context();
         // GET: Collection
         public ActionResult Index()
-        {
-            IEnumerable<Hsuit> hsuits = db.Hsuits;
-            IEnumerable<Category> categories = db.Categories;
-
-            Photo photo = db.Photos.First(f => f.hsuit.Id == 1);
-
-
-            ViewBag.Hsuits = hsuits;
-            ViewBag.Photos = photo;
-            ViewBag.Categories = categories;
-
-
-
+        {   
+            ViewBag.suits = db.Hsuits;
+            ViewBag.Categories = db.Categories;
             return View();
         }
+
+
+        [HttpGet]
+        public ActionResult Look(int Id)
+        {
+            IEnumerable<Hsuit> suits = db.Hsuits.Where(s => s.Category.CategoryId == Id);
+            Category cat = db.Categories.First(c => c.CategoryId == Id);
+
+            ViewBag.cat = cat;
+            ViewBag.suits = suits;
+            return View();
+        }
+
+
+
+
+
+
+
     }
 }

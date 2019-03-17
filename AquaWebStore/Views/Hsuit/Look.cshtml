@@ -4,12 +4,23 @@
     ViewBag.Title = "Look";
 }
 
-<h2>@Model.Name</h2>
+<h2>@ViewBag.hsuit.Name</h2>
 <div>
-    <table>
-        
+    <table align="center">
+        <tr>
+            <td align="center"><p>@ViewBag.hsuit.Name</p></td>
+        </tr>
     </table>
-
-
+    <table>
+        <tr>
+            @foreach (var photo in ViewBag.photos)
+            {
+                <td width="50%" align="center"><img width="50%" src="~/Pictures/@photo.Path" /></td>
+            }
+        </tr>
+        </table>
+    <table align="center">
+        <tr><td align="center"><p>@ViewBag.hsuit.Price</p><tr><td>
+    </table>
 </div>
 

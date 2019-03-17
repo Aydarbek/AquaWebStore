@@ -39,3 +39,4 @@ D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebS
 D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebStore.csproj.GenerateResource.Cache
 D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebStore.Migrations.AquaDB_v2.resources
 D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebStore.Migrations.Aqua_DB_v22.resources
+D:\Projects\ASP.NET\AquaWebStoreNew\AquaWebStore\AquaWebStore\obj\Debug\AquaWebStore.Migrations.Aqua_DB_v3.resources
